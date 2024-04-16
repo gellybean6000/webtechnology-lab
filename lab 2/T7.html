@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump to Top Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+        }
+        #topLink {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the content of section 1.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the content of section 2.</p>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the content of section 3.</p>
+    </section>
+
+    <a href="#" id="topLink">Back to Top</a>
+
+    <script>
+        // Add event listener to the link to scroll to the top
+        document.getElementById('topLink').addEventListener('click', function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+
+        // Add event listener to show/hide the link based on scroll position
+        window.onscroll = function() {
+            showTopLink();
+        };
+
+        function showTopLink() {
+            var topLink = document.getElementById('topLink');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topLink.style.display = 'block';
+            } else {
+                topLink.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

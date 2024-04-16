@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Background Color and Text</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #ffffff;
+    }
+</style>
+</head>
+<body>
+
+<h1 id="heading">Welcome to My Webpage</h1>
+<button id="changeButton" onclick="changeBackgroundAndText()">Change</button>
+
+<script>
+function changeBackgroundAndText() {
+    var body = document.body;
+    var heading = document.getElementById("heading");
+
+    // Change background color
+    var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    body.style.backgroundColor = randomColor;
+
+    // Change heading text
+    var texts = ["New Background!", "Wow, Nice Color!", "Feeling Refreshed?"];
+    var randomText = texts[Math.floor(Math.random() * texts.length)];
+    heading.innerText = randomText;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+nav li{
+    display: inline;
+    margin: 34px;
+}
+
+nav{
+    background-color: lightblue;
+}
+nav li:hover{
+    background-color: rgba(0, 0, 139, 0.324);
+}

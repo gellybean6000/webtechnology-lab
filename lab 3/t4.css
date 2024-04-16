@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+}
+
+.left{
+    background: rgba(128, 128, 128, 0.461);
+    width: 50vw;
+    height: 100vh;
+}
+.right{
+    background: rgba(2, 252, 2, 0.409);
+    width: 50vw;
+    height: 100vh;
+}

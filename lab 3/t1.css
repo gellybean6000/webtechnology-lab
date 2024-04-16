@@ -1,0 +1,21 @@
+*{
+    color: white;
+}
+#a{
+    background-color: blue;
+}
+#b{
+    background-color: rgb(4, 4, 222);
+}
+#c{
+    background-color: rgb(4, 4, 186);
+}
+#d{
+    background-color: rgb(2, 2, 148);
+}
+#e{
+    background-color: rgb(2, 2, 126);
+}
+#f{
+    background-color: rgba(2, 2, 81, 0.925);
+}

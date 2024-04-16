@@ -1,0 +1,17 @@
+*{
+    font-size: 14px;
+    font-style: sans-serif;
+}
+
+table, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th{
+    color: white;
+    background-color: black;
+}
+
+.odd{
+    background-color: rgba(128, 128, 128, 0.509);
+}

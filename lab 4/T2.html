@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+</head>
+<style>
+h1{
+    justify-content: center;
+    margin-left:50%;
+    align-items: center;
+}
+button{
+    margin-left:50%;
+}
+</style>
+<body>
+    <h1 id="heading">this is heading</h1>
+    <button id="color">change</button>
+<script>
+    document.getElementById('color').addEventListener('click', function() {
+    document.body.style.backgroundColor = 'lightgreen'; 
+    document.getElementById('heading').style.color = 'red'; 
+    document.getElementById('heading').style.fontSize = '48pt'; 
+    document.getElementById('heading').innerText = 'Background color changed!'; })
+
+    var buttonElement = document.createElement('button'); 
+    buttonElement.innerText = 'Click Me'; 
+    document.body.appendChild(buttonElement); 
+        
+      
+
+</script>
+</body>
+</html>
